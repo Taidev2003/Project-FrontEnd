@@ -1,0 +1,268 @@
+@media screen and (max-width:1400px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .logoipsum-slider figure {
+        padding: 30px 18px;
+    }
+
+    .team-img {
+        min-width: 277px
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+
+    .container {
+        max-width: 960px;
+    }
+
+
+
+    .team-img {
+        min-width: 232px
+    }
+}
+
+@media screen and (max-width:960px) {
+    .container {
+        max-width: 925px;
+    }
+
+    .feature .flex {
+        flex-wrap: wrap;
+    }
+
+    .header-card {
+        width: 50%;
+    }
+
+    .header-card:nth-child(3),
+    .header-card:nth-child(4) {
+        margin: 0;
+    }
+
+    .feature h4 {
+        width: 100%;
+        margin: 19px 0 15px 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 757px;
+    }
+
+    .hero-social-icon {
+        position: relative;
+        flex-direction: row !important;
+        justify-content: center !important;
+
+    }
+
+    .hero-social-icon hr {
+        display: none;
+    }
+
+    .team-img {
+        min-height: 232px;
+        object-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 66px;
+    }
+
+    h2 {
+        font-size: 34px;
+        font-weight: 800;
+        line-height: 48px;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    h4 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    h5 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    h6 {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        padding: 14px 30px 14px 30px;
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        padding: 14px 30px 14px 30px !important;
+    }
+
+    .h2_margin {
+        margin: 13px 0;
+    }
+
+    .container {
+        max-width: 757px;
+    }
+
+    .hero {
+        padding: 110px 0 279px 0;
+    }
+
+    .ab-feature {
+        padding: 10px 0 60px 0;
+    }
+
+    .logoipsum {
+        padding: 100px 0;
+    }
+
+    .logoipsum .hr1 {
+        width: 80px;
+        margin: 0 auto 33px auto;
+    }
+
+    .logoipsum .hr2 {
+        width: 80px;
+        margin: 33px auto 0 auto;
+    }
+
+    .logoipsum-slider {
+        margin-top: 12px;
+    }
+
+    .logoipsum img {
+        width: 150px;
+    }
+
+    .about {
+        padding: 70px 0;
+    }
+
+    .ab-count {
+        width: 155px;
+        height: 155px;
+    }
+
+    .ab-count h5 {
+        width: 110px;
+    }
+
+    .portfolio-1 {
+        padding: 70px 0 70px 0;
+    }
+
+    .gallary {
+        padding-bottom: 70px1;
+    }
+
+    .tab button {
+        padding: 11px 19px;
+    }
+
+    .gallary img {
+        height: 300px;
+    }
+
+    .gallary img[alt="sm_img"] {
+        height: 150px;
+    }
+
+    .gallary .container {
+        margin-top: -355px;
+    }
+
+    .gallary .mt {
+        margin-top: -258px;
+    }
+
+    .service-1 {
+        padding: 70px 0;
+    }
+
+    .service-1 .flex-column {
+        flex-wrap: wrap;
+    }
+
+    .service-card {
+        width: 48%;
+    }
+
+    .service-1 .service-card {
+        flex-wrap: wrap;
+    }
+
+    .service-card img[alt="slider1"] {
+        width: 85px;
+    }
+
+    .service-card img[alt="slider2"] {
+        width: 62px;
+    }
+
+    .service-card img[alt="slider3"] {
+        width: 52px;
+    }
+
+    .experience {
+        padding: 70px 0;
+    }
+
+    .ex-card .flex {
+        padding: 26px 2px;
+    }
+
+    .ex-card p {
+        margin-top: 5px;
+    }
+
+    .work-line div {
+        padding: 33px 8px 32px 29px;
+    }
+
+    .work {
+        padding: 70px 0;
+    }
+
+    .work-para {
+        padding: 0 95px;
+    }
+
+    .work-line div:first-child {
+        width: 185px;
+        min-height: 185px;
+    }
+}

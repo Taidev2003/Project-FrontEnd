@@ -106,6 +106,10 @@ section {
     display: block;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -1132,11 +1136,15 @@ aside .pages {
     color: #fff;
 }
 
+.service-data p {
+
+    padding: 0 221px 0 0;
+}
+
 .service-1 p {
     color: #d3c9c1;
     position: relative;
     margin-bottom: 25px;
-    padding: 0 221px 0 0;
 }
 
 .service-1 .service_hr1 {
@@ -1171,7 +1179,7 @@ aside .pages {
 
 .service-card:hover {
     transform: scale(1.05);
-    transition: all 0.4s ease;
+    transition: all 0.4s ease-in-out;
 }
 
 .service-card a {
@@ -1205,4 +1213,801 @@ aside .pages {
     box-shadow: 10px 17px 28px 0 rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     padding: 12px;
+    width: 124px;
+    height: 85px;
+    display: flex;
+}
+
+.service-card [alt="slider1"] {
+    width: 105px;
+
+}
+
+.service-card [alt="slider2"] {
+    width: 75px;
+
+}
+
+.service-card [alt="slider3"] {
+    width: 60px;
+
+}
+
+.experience {
+    background-image: url('../Images//bg/experience_bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 120px 0;
+    position: relative;
+    margin-top: -1px;
+}
+
+.experience::before {
+    position: absolute;
+    content: '';
+    top: 26rem;
+    background-image: url('../Images/bg/experience_cercle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 30%;
+    height: 39%;
+    left: 32%;
+}
+
+.experience h5 {
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.experience p,
+.experience h2 {
+    color: #fff;
+
+}
+
+.exp-center p {
+    padding: 0 221px 0 0;
+}
+
+
+.experience .exp-hr1 {
+    color: #b520a3;
+    opacity: 1.25;
+    height: 1px;
+    width: 60px;
+    border: 1px solid;
+}
+
+.experience hr {
+    width: 100%;
+    opacity: 1.25;
+    height: 1px;
+    color: #461f72;
+    border: 1px solid;
+    margin: 35px 0;
+}
+
+
+
+.experience .btn_hover1 {
+    padding: 15px 40px;
+}
+
+.experience .btn_hover2 {
+    padding: 15px 30px;
+    border: 1px solid #ff7527;
+}
+
+
+.experience_mask figure {
+    width: fit-content;
+    clip-path: circle(47% at 50% 50%);
+    padding: 6px;
+    background: linear-gradient(11deg, #7436bb 0.01%, #b520a3 100%);
+    transition: all 0.8s ease;
+}
+
+.experience_mask figure:hover {
+    transform: scale(1.05);
+    transition: all 0.8s ease;
+}
+
+
+.experience-hr {
+    color: #fff;
+    position: absolute;
+    left: -45px;
+    bottom: 25px;
+    rotate: -90deg;
+}
+
+
+.experience-hr h6 {
+    letter-spacing: 3.72px;
+    text-transform: uppercase;
+}
+
+
+.experience-hr hr {
+    opacity: 1.25;
+    width: 60px;
+    height: 1px;
+    color: #fff;
+    border: 1px solid;
+    margin: 0;
+}
+
+
+.ex-card {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 23px 30px 0 rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    z-index: 1;
+}
+
+
+.ex-card:hover {
+    background: linear-gradient(11deg, #7436bb 0.01%, #b520a3 100%);
+    transform: scale(1.05);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.ex-card p {
+    color: #767676;
+    margin-top: 10px;
+    padding: 0;
+    font-weight: 600;
+}
+
+.ex-card h4 {
+    color: #231f20;
+}
+
+.ex-card div:last-child {
+    width: 100%;
+}
+
+.ex-card:hover.ex-card h3 {
+    color: #7436bb !important;
+}
+
+.ex-card:hover.ex-card .flex {
+    background: #fff;
+}
+
+.ex-card .flex {
+    border-radius: 50%;
+    background: linear-gradient(11deg, #7436bb 0.01%, #b520a3 100%);
+    color: #fff;
+    width: 115px;
+    padding: 29px 0;
+}
+
+.work {
+    background-image: url('../Images/bg/work-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 120px 0;
+    margin-top: -2px;
+}
+
+.work h5 {
+    letter-spacing: 1px;
+}
+
+.work-para {
+    color: #fff;
+    padding: 0 290px;
+}
+
+.work-line {
+    background-image: url('../Images/bg/work-line.png');
+    background-size: 100% 100%;
+    background-position: center;
+    min-height: 242px;
+    background-repeat: no-repeat;
+    margin: 136px 25px 146px 25px;
+}
+
+.work-line div {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(11deg, #7436bb 0.01%, #b520a3 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 19px 0 32px 34px;
+}
+
+.work-line div:first-child {
+    top: -66px;
+    left: -30px;
+    width: 196px;
+    min-height: 196px;
+}
+
+.work-line div:nth-child(2) {
+    bottom: -70px;
+    left: 260px;
+    width: 180px;
+    min-height: 180px;
+}
+
+.work-line div:nth-child(3) {
+    right: 260px;
+    top: -66px;
+    width: 196px;
+    min-height: 196px;
+}
+
+.work-line div:last-child {
+    right: -49px;
+    bottom: -70px;
+    width: 180px;
+    min-height: 180px;
+}
+
+.work a {
+    border: 1.5px solid #ff7527;
+    padding: 15px 30px;
+}
+
+.work-hr {
+    color: #fff;
+    position: absolute;
+    right: 0;
+    rotate: -90deg;
+}
+
+.work-hr h6 {
+    letter-spacing: 3.72px;
+    text-transform: uppercase;
+}
+
+.work-hr hr {
+    opacity: 1.25;
+    height: 1px;
+    color: #fff;
+    width: 60px;
+    border: 1px solid;
+}
+
+.team {
+    background-image: url('../Images//bg/experience_bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 120px 0 0 0;
+}
+
+.team h5 {
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.team h2 {
+    color: #fff;
+    padding: 0 212px 0 0;
+}
+
+.team p {
+    color: #d3c9c1;
+    padding: 0 184px 0 0;
+
+}
+
+.team .team-hr1 {
+    opacity: 1.25;
+    height: 1px;
+    color: #b520a3;
+    width: 60px;
+    border: 3px solid;
+}
+
+.team a {
+    padding: 15px 30px;
+    border: 1.5px solid #ff8c4b;
+}
+
+.team-slider {
+    overflow: hidden;
+    display: flex;
+}
+
+.team-img {
+    min-width: 304px;
+    object-fit: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.team-img img {
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+
+.team-img .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, #7436bb66 28%, #b520a378 68%);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+}
+
+.team-img:hover .overlay {
+    height: 100%;
+}
+
+.overlay-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.overlay-text h4 {
+    margin: 6px 0 15px 0;
+}
+
+.overlay-text i {
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.overlay-text a {
+    border: 1px solid#fff;
+    border-radius: 50%;
+}
+
+.overlay-text a:hover {
+    background-color: #fff;
+}
+
+.overlay-text a:hover i {
+    color: #150725;
+}
+
+.overlay-text .flex a:first-child {
+    padding: 8px 13px !important;
+}
+
+.overlay-text .flex a:nth-child(2) {
+    padding: 8px 12px !important;
+}
+
+.overlay-text .flex a:last-child {
+    padding: 8px 10px !important;
+}
+
+.team-btn {
+    background: linear-gradient(0deg, #471133 0%, #140921 100%);
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 90px;
+    text-transform: uppercase;
+}
+
+
+
+.pricing {
+    padding: 120px 0;
+    background-image: url('../Images/bg/pricing-bg.png');
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    z-index: 1;
+    background: #150725;
+    padding: 120px 0;
+}
+
+.pricing span {
+    background-color: #150725;
+    opacity: 0.9;
+    width: 100% !important;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.pricing-hr {
+    color: #fff;
+    position: absolute;
+    right: 0;
+    rotate: -90deg;
+}
+
+.pricing-hr h6 {
+    letter-spacing: 3.72px;
+    text-transform: uppercase;
+}
+
+.pricing-hr hr {
+    opacity: 1.25;
+    height: 1px;
+    color: #ffffffbf;
+    width: 60px;
+    border: 1px solid;
+}
+
+.pricing p {
+    padding: 0 30px;
+}
+
+.pricing-card div {
+    background: #3d0541;
+    color: #fff;
+    padding: 70px;
+    transition: all 0.4s ease;
+    width: 100%;
+}
+
+.pricing-card div:hover {
+    transform: scale(1.07) !important;
+    transition: all 0.4s ease !important;
+    z-index: 3;
+}
+
+.pricing-card div:nth-child(2) {
+    transform: scale(1.09);
+    z-index: 2;
+    background: linear-gradient(11deg, #7336bb 0.01%, #b520a3 100%);
+
+}
+
+.pricing-card div:nth-child(2):hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.pricing-card h3 {
+    color: #f57c48;
+}
+
+.pricing-card h2 {
+    margin-bottom: 30px;
+}
+
+.pricing-card div:nth-child(2) a {
+    background-color: #fff;
+
+}
+
+.pricing-card div:nth-child(2) a:hover {
+    color: #fff;
+}
+
+.pricing-card a {
+    padding: 15px 30px;
+}
+
+.faq {
+    position: relative;
+    background-image: url('../Images/bg/faq-bg.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 120px 0;
+    z-index: 1;
+
+}
+
+.faq::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+}
+
+.faq span {
+    background-color: #000000;
+    opacity: 0.6;
+    width: 100% !important;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.faq .text-center h2 {
+    color: #fff;
+    padding: 0 55px 0 0;
+    text-align: left;
+}
+
+.faq h5 {
+    color: #fff;
+}
+
+.faq .text-center p {
+    color: #fff;
+    padding: 0 123px 0 0;
+    text-align: left;
+}
+
+.faq .faq-hr1 {
+    opacity: 1.25;
+    height: 1px;
+    width: 60px;
+    color: #b520a3;
+    border: 1px solid;
+}
+
+.accordion-button {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    border: none;
+    color: #231f20;
+    font-weight: 700 !important;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+.accordion-button img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion-collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-collapse p {
+    color: #767676;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.blog {
+    background: #150725;
+    padding: 120px 0;
+}
+
+.blog h5 {
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.blog h2 {
+    color: #fff;
+}
+
+.blog p {
+    color: #fff;
+    padding: 0 296px 0 0;
+}
+
+.blog .blog-hr1 {
+    opacity: 1.25;
+    height: 1px;
+    color: #b520a3;
+    width: 60px;
+    border: 1px solid;
+}
+
+.blog .btn_hover2 {
+    padding: 15px 30px;
+    border: 1.5px solid #ff8c4b
+}
+
+.blog-card {
+    flex: 0 0 33.33%;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.blog-card img {
+    width: 100%;
+    transition: all 0.4s ease;
+
+}
+
+.blog-card:hover img {
+    transform: scale(1.05);
+    opacity: 0.8;
+    transition: all 0.4s ease;
+}
+
+.blog-card h4 {
+    color: #d3c9c1;
+    margin: 18px 0;
+    padding: 0 30px 0 0;
+}
+
+.blog-card a {
+    padding: 0 0 11px 0 !important;
+    border-bottom: 2px solid #ff8c4b;
+    letter-spacing: 2px;
+    background: linear-gradient(66.75deg, #f54a48 0.87%, #fa982f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+footer {
+    background: #150725;
+    padding: 120px 0 0 0;
+}
+
+.footer-hr .flex {
+    rotate: -90deg;
+}
+
+.footer-hr h6 {
+    color: #fff;
+    letter-spacing: 3.72px;
+    text-transform: uppercase;
+}
+
+.footer-hr h3 {
+    margin-top: 125px;
+    color: #fff;
+    letter-spacing: 1px;
+
+}
+
+.footer-hr p {
+    color: #fff;
+    padding: 0 300px;
+    margin: 20px 0 30px 0;
+}
+
+.footer-hr hr {
+    opacity: 1.25;
+    height: 1px;
+    width: 60px;
+    border: 1px solid;
+    color: #fff;
+}
+
+footer form {
+    border-radius: 50px;
+    border: 1px solid #6d2f8a;
+    background: #381a46;
+    width: 76%;
+    margin: auto;
+
+}
+
+footer form input {
+    border-radius: 50px;
+    background: #381a46;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: #fff;
+    width: 68%;
+}
+
+footer form button {
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+footer form button:hover {
+    color: #7436bb;
+}
+
+#footer-message {
+    background: #fff;
+    color: green;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    border-radius: 10px;
+    transition: display all 0.3s ease;
+    display: none;
+}
+
+.footer-menu {
+    background: linear-gradient(0deg, #471133 0%, #140921 100%);
+    color: #fff;
+    padding: 50px 0;
+    margin-top: 77px;
+}
+
+.footer-menu img {
+    width: 100px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-menu ul li a:hover {
+    color: #f54a48;
+}
+
+.footer-menu i {
+    font-size: 20px;
+    background: linear-gradient(0deg, #f54a48 0.5%, #fa982f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 10px;
+
+}
+
+.footer-menu h4 {
+    color: #f57c48;
+    margin-bottom: 26px;
+}
+
+.footer-menu a {
+    color: #fff;
+    padding: 0 !important;
+}
+
+.footer-menu p {
+    padding: 0 78px 0 0;
+}
+
+.copyright {
+    background: #150725;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.copyright a {
+    color: #fff;
+
+}
+
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    outline: none;
+    padding: 17px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    color: #d12bec;
+    cursor: pointer;
+    z-index: 999999999999;
+    display: none;
+}
+
+#backToTopBtn:hover {
+    color: #fff;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(42deg, #7436bb 0.01%, #b520a3 100%);
+    border-radius: 5px;
 }
